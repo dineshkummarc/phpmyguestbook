@@ -10,12 +10,10 @@
 
 require_once('prefs.php');
 
-
 define("ENTRIES", "entries.txt");
 define("TEMPENTRIES", "tempentries.txt");
 define("IPBLOCKLST", "iplist.txt");
 define("SPAMWDS", "spamwords.txt");
-
 
 function cleanUp($text) {
 	$text = trim(htmlentities(strip_tags(urldecode($text))));
